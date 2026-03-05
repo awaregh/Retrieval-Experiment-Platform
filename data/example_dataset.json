@@ -1,0 +1,151 @@
+{
+  "documents": [
+    {
+      "id": "doc_1",
+      "text": "Kubernetes is an open-source container orchestration platform that automates deploying, scaling, and managing containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon decades of experience at Google running production workloads at scale, combined with best-of-breed ideas and practices from the community.",
+      "metadata": {"topic": "infrastructure", "category": "container_orchestration"}
+    },
+    {
+      "id": "doc_2",
+      "text": "Docker is a platform for developing, shipping, and running applications in containers. Containers allow developers to package an application with all its dependencies into a standardized unit. Docker containers are lightweight, portable, and self-sufficient, making it easy to run applications consistently across different environments from development to production.",
+      "metadata": {"topic": "infrastructure", "category": "containerization"}
+    },
+    {
+      "id": "doc_3",
+      "text": "CI/CD stands for Continuous Integration and Continuous Delivery. CI is the practice of automating the integration of code changes from multiple contributors into a single software project. CD extends CI by automatically deploying all code changes to a testing and then to a production environment after the build stage. Tools like Jenkins, GitHub Actions, and GitLab CI are commonly used.",
+      "metadata": {"topic": "devops", "category": "cicd"}
+    },
+    {
+      "id": "doc_4",
+      "text": "Microservices architecture is an approach to developing a single application as a suite of small, independently deployable services. Each service runs in its own process and communicates with others via HTTP APIs or message queues. This approach improves scalability, resilience, and enables teams to develop and deploy services independently.",
+      "metadata": {"topic": "architecture", "category": "microservices"}
+    },
+    {
+      "id": "doc_5",
+      "text": "PostgreSQL is a powerful, open-source object-relational database system with over 35 years of active development. It has earned a strong reputation for reliability, feature robustness, and performance. PostgreSQL supports advanced data types, full-text search, JSON, and horizontal scaling through partitioning and replication.",
+      "metadata": {"topic": "databases", "category": "relational"}
+    },
+    {
+      "id": "doc_6",
+      "text": "Redis is an in-memory data structure store used as a database, cache, and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and high availability via Redis Sentinel.",
+      "metadata": {"topic": "databases", "category": "nosql_cache"}
+    },
+    {
+      "id": "doc_7",
+      "text": "Prometheus is an open-source systems monitoring and alerting toolkit. It collects and stores its metrics as time series data, with labels for multi-dimensional filtering. Prometheus has a powerful query language called PromQL, and integrates with Grafana for visualization. It is widely used for monitoring Kubernetes clusters and microservices.",
+      "metadata": {"topic": "monitoring", "category": "observability"}
+    },
+    {
+      "id": "doc_8",
+      "text": "Serverless computing is a cloud execution model where the cloud provider dynamically manages the allocation of machine resources. AWS Lambda, Google Cloud Functions, and Azure Functions are popular serverless platforms. Developers write code as functions that are triggered by events, without worrying about server management, patching, or scaling infrastructure.",
+      "metadata": {"topic": "cloud", "category": "serverless"}
+    },
+    {
+      "id": "doc_9",
+      "text": "Infrastructure as Code (IaC) is the process of managing and provisioning computing infrastructure through machine-readable definition files. Tools like Terraform, Ansible, and AWS CloudFormation allow teams to version control their infrastructure. IaC improves consistency, reduces human error, and enables rapid environment provisioning.",
+      "metadata": {"topic": "devops", "category": "iac"}
+    },
+    {
+      "id": "doc_10",
+      "text": "Service mesh is a dedicated infrastructure layer for handling service-to-service communication in a microservices architecture. Istio and Linkerd are popular service mesh implementations. A service mesh provides features like load balancing, mTLS encryption, circuit breaking, observability, and traffic management without requiring changes to application code.",
+      "metadata": {"topic": "architecture", "category": "service_mesh"}
+    },
+    {
+      "id": "doc_11",
+      "text": "Apache Kafka is a distributed event streaming platform used for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. Kafka stores streams of records in topics, and allows producers to publish and consumers to subscribe to these topics. It is designed for fault tolerance and horizontal scalability.",
+      "metadata": {"topic": "messaging", "category": "event_streaming"}
+    },
+    {
+      "id": "doc_12",
+      "text": "Elasticsearch is a distributed, RESTful search and analytics engine built on Apache Lucene. It allows you to store, search, and analyze large volumes of data in near real-time. Elasticsearch is commonly used for log analytics, full-text search, security intelligence, business analytics, and operational intelligence use cases.",
+      "metadata": {"topic": "search", "category": "search_engine"}
+    },
+    {
+      "id": "doc_13",
+      "text": "Grafana is an open-source analytics and interactive visualization platform. It connects to various data sources including Prometheus, InfluxDB, Elasticsearch, and databases. Grafana allows you to create dashboards with panels displaying metrics, logs, and traces. It is widely used for operational monitoring and business intelligence.",
+      "metadata": {"topic": "monitoring", "category": "visualization"}
+    },
+    {
+      "id": "doc_14",
+      "text": "AWS S3 (Simple Storage Service) is an object storage service offering industry-leading scalability, data availability, security, and performance. S3 stores data as objects within buckets, and supports versioning, lifecycle policies, and cross-region replication. It integrates deeply with other AWS services and is used for backup, archival, static website hosting, and big data analytics.",
+      "metadata": {"topic": "cloud", "category": "object_storage"}
+    },
+    {
+      "id": "doc_15",
+      "text": "Helm is the package manager for Kubernetes. It helps you manage Kubernetes applications through Helm Charts, which define, install, and upgrade complex Kubernetes applications. Charts are packages of pre-configured Kubernetes resources. Helm simplifies the deployment process and allows you to share, version, and reuse application configurations.",
+      "metadata": {"topic": "infrastructure", "category": "kubernetes_tooling"}
+    },
+    {
+      "id": "doc_16",
+      "text": "GitOps is a set of practices that uses Git as a single source of truth for declarative infrastructure and applications. With GitOps, the desired state of the system is stored in Git, and automated processes ensure the actual state matches it. ArgoCD and Flux are popular GitOps tools for Kubernetes environments.",
+      "metadata": {"topic": "devops", "category": "gitops"}
+    },
+    {
+      "id": "doc_17",
+      "text": "Load balancing is the process of distributing network traffic across multiple servers to ensure no single server becomes overwhelmed. Load balancers can operate at Layer 4 (transport) or Layer 7 (application) of the OSI model. Popular solutions include NGINX, HAProxy, AWS ELB, and cloud-native Kubernetes Ingress controllers.",
+      "metadata": {"topic": "infrastructure", "category": "networking"}
+    }
+  ],
+  "queries": [
+    {
+      "question": "What is Kubernetes and what does it do?",
+      "relevant_documents": ["doc_1"]
+    },
+    {
+      "question": "How do Docker containers work?",
+      "relevant_documents": ["doc_2"]
+    },
+    {
+      "question": "What is CI/CD and what tools are used for it?",
+      "relevant_documents": ["doc_3"]
+    },
+    {
+      "question": "Explain microservices architecture",
+      "relevant_documents": ["doc_4"]
+    },
+    {
+      "question": "What database should I use for relational data with full-text search?",
+      "relevant_documents": ["doc_5"]
+    },
+    {
+      "question": "How does Redis work as a cache?",
+      "relevant_documents": ["doc_6"]
+    },
+    {
+      "question": "How do I monitor a Kubernetes cluster?",
+      "relevant_documents": ["doc_7", "doc_13"]
+    },
+    {
+      "question": "What is serverless computing and which platforms support it?",
+      "relevant_documents": ["doc_8"]
+    },
+    {
+      "question": "What tools can I use for Infrastructure as Code?",
+      "relevant_documents": ["doc_9"]
+    },
+    {
+      "question": "What is a service mesh and how does it help microservices?",
+      "relevant_documents": ["doc_10"]
+    },
+    {
+      "question": "How does Apache Kafka handle event streaming?",
+      "relevant_documents": ["doc_11"]
+    },
+    {
+      "question": "What is Elasticsearch used for?",
+      "relevant_documents": ["doc_12"]
+    },
+    {
+      "question": "How can I store large amounts of files in the cloud?",
+      "relevant_documents": ["doc_14"]
+    },
+    {
+      "question": "What is Helm and how does it help with Kubernetes deployments?",
+      "relevant_documents": ["doc_15"]
+    },
+    {
+      "question": "What is GitOps and which tools implement it?",
+      "relevant_documents": ["doc_16"]
+    }
+  ]
+}
